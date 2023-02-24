@@ -1,22 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
-public class GiveQuest : MonoBehaviour
+public class ShowItems : MonoBehaviour
 {
-    public bool prequisiteItem;
+    public GiveQuest showItem;
 
-    public GameObject QuestItem;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        prequisiteItem = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(showItem.prequisiteItem == true)
+        {
+
+        }
     }
 }
