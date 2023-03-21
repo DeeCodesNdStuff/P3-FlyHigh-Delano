@@ -54,7 +54,7 @@ public class Movement : MonoBehaviour
             rb.drag = 0f;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) && isGrounded == false)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded == false)
         {
             rb.drag = 5f;
 
