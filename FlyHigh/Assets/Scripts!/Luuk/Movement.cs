@@ -5,7 +5,10 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public bool isGrounded;
+    public bool isDash;
     public float speed;
+    public float speedD;
+    public int speedG;
     public float jumpF;
     public float hor;
     public float ver;
@@ -18,6 +21,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         speed = 6f;
+        speedD = 10f;
         jumpF = 2.1f;
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.1f, 0.0f);
@@ -25,6 +29,7 @@ public class Movement : MonoBehaviour
     void OnCollisionStay()
     {
         isGrounded = true;
+        isDash = true;
     }
 
     // Update is called once per frame
@@ -42,6 +47,36 @@ public class Movement : MonoBehaviour
         {
             rb.AddForce(jump * jumpF, ForceMode.Impulse);
             isGrounded = false;
+        }
+
+        if (isGrounded == true)
+        {
+            rb.drag = 0f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q) && isGrounded == false)
+        {
+            rb.drag = 5f;
+
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                rb.AddForce(new Vector3(speedG, 0, 0));
+            }
+
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                rb.AddForce(new Vector3(0, 0, speedG));
+            }
+
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                rb.AddForce(new Vector3(-speedG, 0, 0));
+            }
+
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+               rb.AddForce(new Vector3(0, 0, -speedG));
+            }
         }
     }
 }
