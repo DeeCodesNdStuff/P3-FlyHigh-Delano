@@ -157,17 +157,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
-  isDash: 0
   speed: 0
-  speedD: 0
+  speedV: 0
   speedG: 0
   jumpF: 0
   hor: 0
   ver: 0
-  cx: 0
-  cm: 0
   move: {x: 0, y: 0, z: 0}
   jump: {x: 0, y: 0, z: 0}
+  rb: {fileID: 0}
 --- !u!136 &405318884
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -917,6 +915,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cy: 0
+  speedH: 0
+  speedV: 0
+  tar: {fileID: 405318887}
+  dis: 0
 --- !u!114 &1331180598
 MonoBehaviour:
   m_ObjectHideFlags: 0
