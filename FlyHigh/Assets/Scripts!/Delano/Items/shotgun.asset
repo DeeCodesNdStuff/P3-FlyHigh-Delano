@@ -23,4 +23,4 @@ MonoBehaviour:
   currentBullets: 2
   text:
   - Please reload
-  - Please reload
+  - shoot ahead
