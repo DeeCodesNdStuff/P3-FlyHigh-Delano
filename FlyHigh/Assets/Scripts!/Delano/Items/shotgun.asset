@@ -17,6 +17,10 @@ MonoBehaviour:
   range: 0
   magCount: 0
   spread: 0
-  damage: 0
-  bulletCount: 0
+  damage: 10
   reloadSpeed: 0
+  maxBullets: 2
+  currentBullets: 2
+  text:
+  - Please reload
+  - Please reload
