@@ -10,4 +10,6 @@ public class Shotgun : Ranged
     public int maxBullets;
     public int currentBullets;
     public string[] text;
+
+    public bool equipped;
 }

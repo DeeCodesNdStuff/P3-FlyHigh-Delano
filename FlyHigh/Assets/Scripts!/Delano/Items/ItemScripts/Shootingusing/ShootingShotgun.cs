@@ -30,13 +30,22 @@ public class ShootingShotgun : MonoBehaviour
             shootGuns.currentBullets = shootGuns.maxBullets;
         }
 
-        if (shootGuns.currentBullets == 0)
+        if(shootGuns.equipped == true)
         {
-            textMeshpr0.text = shootGuns.text[0];
+            textMeshpr0.enabled = true;
+            if (shootGuns.currentBullets == 0)
+            {
+                textMeshpr0.text = shootGuns.text[0];
+            }
+            if (shootGuns.currentBullets > 0)
+            {
+                textMeshpr0.text = shootGuns.text[1];
+            }
         }
-        if (shootGuns.currentBullets > 0)
+        if(shootGuns.equipped == false)
         {
-            textMeshpr0.text = shootGuns.text[1];
+            textMeshpr0.enabled = false;
         }
+
     }
 }

@@ -16,11 +16,12 @@ MonoBehaviour:
   equippable: 0
   range: 0
   magCount: 0
-  spread: 1
+  spread: 0
   damage: 10
   reloadSpeed: 0
   maxBullets: 2
-  currentBullets: 2
+  currentBullets: -26
   text:
   - Please reload
   - shoot ahead
+  equipped: 1
