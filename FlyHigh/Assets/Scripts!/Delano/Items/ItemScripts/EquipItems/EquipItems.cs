@@ -22,8 +22,7 @@ public class EquipItems : MonoBehaviour
         if (shotsgut.equipped == true)
         {
             item.transform.position = clipingPoint.transform.position;
-            
-            
+
         }
 
         if (Input.GetKeyDown(KeyCode.E))
