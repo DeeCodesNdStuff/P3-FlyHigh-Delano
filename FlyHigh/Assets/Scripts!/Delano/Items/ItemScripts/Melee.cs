@@ -5,4 +5,5 @@ using UnityEngine;
 public class Melee : Weapons
 {
     public int range;
+    public bool equipped;
 }

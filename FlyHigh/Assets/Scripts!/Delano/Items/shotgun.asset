@@ -24,4 +24,4 @@ MonoBehaviour:
   text:
   - Please reload
   - shoot ahead
-  equipped: 1
+  equipped: 0

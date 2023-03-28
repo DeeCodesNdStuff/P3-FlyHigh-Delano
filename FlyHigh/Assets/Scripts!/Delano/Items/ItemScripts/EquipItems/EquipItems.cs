@@ -8,9 +8,13 @@ using UnityEngine.UIElements;
 public class EquipItems : MonoBehaviour
 {
     public Shotgun shotsgut;
+    public Dagger sliceNddice;
 
     public GameObject player;
     public GameObject clipingPoint;
+    public GameObject clipingPoint1;
+
+    public GameObject item1;
     public GameObject item;
 
 
@@ -39,13 +43,23 @@ public class EquipItems : MonoBehaviour
             }
         }
 
-        if(shotsgut.equipped == true)
+        if (sliceNddice.equipped == true)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                shotsgut.equipped = true;
-            }
+            item1.transform.position = clipingPoint1.transform.position;
+            item1.transform.rotation = clipingPoint1.transform.rotation;
+
         }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            sliceNddice.equipped = true;
+            if (Physics.Raycast(transform.position, transform.forward, out hit, 10))
+            {
+                if (item.tag == "ableToPickup")
+                {
+                    item1.transform.position = clipingPoint.transform.position;
+                }
+            }
+        }
     }
 }

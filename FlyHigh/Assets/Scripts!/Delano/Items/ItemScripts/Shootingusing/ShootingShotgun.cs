@@ -15,12 +15,15 @@ public class ShootingShotgun : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            shootGuns.currentBullets -=1;
-            if (Physics.Raycast(transform.position, transform.up, out hit, 1000))
+            if(shootGuns.currentBullets > 0)
             {
-                if (hit.transform.gameObject.tag == "Enemy")
+                shootGuns.currentBullets -= 1;
+                if (Physics.Raycast(transform.position, transform.up, out hit, 1000))
                 {
-                    Destroy(hit.transform.gameObject);
+                    if (hit.transform.gameObject.tag == "Enemy")
+                    {
+                        Destroy(hit.transform.gameObject);
+                    }
                 }
             }
         }
