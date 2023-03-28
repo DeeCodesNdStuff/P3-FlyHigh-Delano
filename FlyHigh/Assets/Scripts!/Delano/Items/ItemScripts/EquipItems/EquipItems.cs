@@ -9,6 +9,7 @@ public class EquipItems : MonoBehaviour
 {
     public Shotgun shotsgut;
 
+    public GameObject player;
     public GameObject clipingPoint;
     public GameObject item;
 
@@ -22,7 +23,8 @@ public class EquipItems : MonoBehaviour
         if (shotsgut.equipped == true)
         {
             item.transform.position = clipingPoint.transform.position;
-
+            item.transform.rotation = clipingPoint.transform.rotation;
+            
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -36,5 +38,14 @@ public class EquipItems : MonoBehaviour
                 }
             }
         }
+
+        if(shotsgut.equipped == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                shotsgut.equipped = true;
+            }
+        }
+
     }
 }

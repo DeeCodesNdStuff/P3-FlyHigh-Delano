@@ -16,7 +16,7 @@ public class ShootingShotgun : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             shootGuns.currentBullets -=1;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 1000))
+            if (Physics.Raycast(transform.position, transform.up, out hit, 1000))
             {
                 if (hit.transform.gameObject.tag == "Enemy")
                 {
