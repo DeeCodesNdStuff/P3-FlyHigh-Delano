@@ -6,4 +6,6 @@ public class Dagger : Melee
 {
     public int damage;
     public int cooldownUse;
+
+    public string[] text;
 }

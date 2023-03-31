@@ -4,5 +4,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "BaseClass", menuName = "baseClassing")]
 public class BaseCLASS : ScriptableObject
 {
- 
+    public Sprite itemImg;
 }

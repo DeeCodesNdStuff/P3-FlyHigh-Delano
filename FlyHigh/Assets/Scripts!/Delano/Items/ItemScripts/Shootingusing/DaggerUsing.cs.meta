@@ -1,9 +1,11 @@
 fileFormatVersion: 2
-guid: 23361aa8c5f7d0444863c2086da9dc6c
+guid: 4aceb0cfb1f320640af78e2229ef661f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sliceNddice: {fileID: 11400000, guid: 581c5dae25dfb844d92727dea0e0874f, type: 2}
+  - textMeshpr1: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -6,6 +6,10 @@ public class Shotgun : Ranged
 {
     public int spread;
     public int damage;
-    public int bulletCount;
     public int reloadSpeed;
+    public int maxBullets;
+    public int currentBullets;
+    public string[] text;
+
+    public bool equipped;
 }
