@@ -20,8 +20,8 @@ MonoBehaviour:
   damage: 10
   reloadSpeed: 0
   maxBullets: 2
-  currentBullets: 2
+  currentBullets: 0
   text:
   - Please reload
   - shoot ahead
-  equipped: 0
+  equipped: 1
