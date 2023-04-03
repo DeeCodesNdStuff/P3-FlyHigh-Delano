@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Enemy
   - ableToPickup
+  - player
+  - deadstate
+  - deadlypossible
+  - check1
+  - check2
   layers:
   - Default
   - TransparentFX
