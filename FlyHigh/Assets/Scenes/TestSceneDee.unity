@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -322,15 +322,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
+  isRunning: 0
   speed: 0
-  speedV: 0
-  speedG: 0
+  speedCa: 0
+  speedGi: 0
   jumpF: 0
   hor: 0
   ver: 0
   move: {x: 0, y: 0, z: 0}
   jump: {x: 0, y: 0, z: 0}
   rb: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!65 &190258232
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1070,7 +1072,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b81fb6eabd7e84eb8ff9463afd894c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cy: 10
   speedH: 10
   speedV: 10
   tar: {fileID: 190258235}
