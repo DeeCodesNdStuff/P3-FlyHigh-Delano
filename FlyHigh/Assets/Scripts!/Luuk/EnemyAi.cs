@@ -14,7 +14,6 @@ public class EnemyAi : MonoBehaviour
     public float fireRa;
     public float fireNe;
     public int wayPointNu;
-    public float time;
     public NavMeshAgent enemy;
     public Transform player;
     public Transform gun;
