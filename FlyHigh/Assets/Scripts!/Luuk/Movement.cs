@@ -42,30 +42,73 @@ public class Movement : MonoBehaviour
         hor = Input.GetAxis("Horizontal");
         ver = Input.GetAxis("Vertical");
         transform.Translate(move * speed * Time.deltaTime);
-
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        
+        //animation
+        if (Input.GetKey(KeyCode.W) && isGrounded)
         {
-            animator.SetTrigger("IsWalking");
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("IsWalking", true);
+            animator.SetBool("IsIdle", false);
+            if(Input.GetKey(KeyCode.LeftShift) && isGrounded)
+            {
+                animator.SetBool("IsRunning", true);
+                animator.SetBool("IsWalking", false);
+                animator.SetBool("IsIdle", false);
+            }
         }
-
-        if (Input.GetKeyUp(KeyCode.W))
+        else if(Input.GetKey(KeyCode.A) && isGrounded)
         {
-            animator.SetTrigger("IsStanding");
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("IsWalking", true);
+            animator.SetBool("IsIdle", false);
+            if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
+            {
+                animator.SetBool("IsRunning", true);
+                animator.SetBool("IsWalking", false);
+                animator.SetBool("IsIdle", false);
+            }
+        }
+        else if (Input.GetKey(KeyCode.S) && isGrounded)
+        {
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("IsWalking", true);
+            animator.SetBool("IsIdle", false);
+            if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
+            {
+                animator.SetBool("IsRunning", true);
+                animator.SetBool("IsWalking", false);
+                animator.SetBool("IsIdle", false);
+            }
+        }
+        else if (Input.GetKey(KeyCode.D) && isGrounded)
+        {
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("IsWalking", true);
+            animator.SetBool("IsIdle", false);
+            if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
+            {
+                animator.SetBool("IsRunning", true);
+                animator.SetBool("IsWalking", false);
+                animator.SetBool("IsIdle", false);
+            }
+        }
+        else
+        {
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("IsWalking", false);
+            animator.SetBool("IsIdle", true);
         }
 
         //dash
-        if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded)
+        if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
         {
             isRunning = true;
             speed = 8f;
-            animator.SetTrigger("IsRunning");
         }
-
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else
         {
             isRunning = false;
             speed = 6f;
-            animator.SetTrigger("IsBackWalking");
         }
 
         //camera

@@ -1,17 +1,17 @@
 fileFormatVersion: 2
 guid: 5c88feb907463944ab33585601532d64
 ModelImporter:
-  serializedVersion: 21202
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: -7361427651036151181
-    second: Idle
+    second: rig|Idle
   - first:
       74: -5480419611278045171
-    second: Run
+    second: rig|Run
   - first:
       74: -6371369689968625921
-    second: Walking
+    second: rig|Walking
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -42,7 +42,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
+      name: rig|Idle
       takeName: rig|Idle
       internalID: 0
       firstFrame: 0
@@ -71,11 +71,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Run
+      name: rig|Run
       takeName: rig|Run
       internalID: 0
       firstFrame: 0
-      lastFrame: 119
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -100,7 +100,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Walking
+      name: rig|Walking
       takeName: rig|Walking
       internalID: 0
       firstFrame: 0
@@ -195,6 +195,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
