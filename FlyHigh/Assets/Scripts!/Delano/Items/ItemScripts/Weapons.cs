@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Weapons : BaseCLASS
 {
-    public bool equippable;
+    public bool ableToReuse;
 }

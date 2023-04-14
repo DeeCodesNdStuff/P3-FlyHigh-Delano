@@ -50,7 +50,7 @@ public class EquipItems : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             sliceNddice.equipped = true;
             if (Physics.Raycast(transform.position, transform.forward, out hit, 10))
