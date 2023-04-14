@@ -140,11 +140,10 @@ MonoBehaviour:
   fireRa: 0
   fireNe: 0
   wayPointNu: 0
-  time: 0
   enemy: {fileID: 2171910105398819082}
   player: {fileID: 0}
-  gun: {fileID: 0}
-  bullet: {fileID: 0}
+  gun: {fileID: 270109834297373811}
+  bullet: {fileID: 3711417055008980683, guid: bb387fdb6ad9c8349843d7f6aa7b51e8, type: 3}
   clone: {fileID: 0}
   wayPoint: []
 --- !u!1 &7564944360786667590
