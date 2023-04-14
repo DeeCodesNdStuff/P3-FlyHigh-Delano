@@ -12,13 +12,13 @@ public class Checkpoint : MonoBehaviour
     {
         if (collider.gameObject.tag == "check1")
         {
-      //      transform.position = check1;
+            check1 = collider.transform.position;
       //      print("hasCollided");
             count = 1;
         }
         if (collider.gameObject.tag == "check2")
         {
-      //      transform.position = check2;
+            check2 = collider.transform.position;
             count = 2;
         }
 

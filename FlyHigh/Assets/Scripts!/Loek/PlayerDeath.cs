@@ -8,10 +8,11 @@ public class PlayerDeath : MonoBehaviour
     public Checkpoint cps;
     public void update()
     {
-        
+        int checkPoint = cps.count;
+
         if (gameObject.tag == "deadstate")
         {
-            if (cps.count == 1)
+            if (checkPoint == 1)
             {
                 transform.position = cps.check1;
 

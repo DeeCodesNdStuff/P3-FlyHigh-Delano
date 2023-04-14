@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {x: 0, y: 0, z: 0}
-  check1: {x: 0, y: 0, z: 0}
+  check1: {x: 38.73, y: 4.3, z: -91.184}
   check2: {x: 0, y: 0, z: 0}
   count: 0
 --- !u!54 &18333561
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961dd4fdbbcafca4f9e249ca62bcca57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cps: {fileID: 0}
+  cps: {fileID: 18333560}
 --- !u!1 &170847406
 GameObject:
   m_ObjectHideFlags: 0
